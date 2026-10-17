@@ -8,7 +8,6 @@ from mcp.server.transport_security import TransportSecuritySettings
 EMAIL = "23f2004697@ds.study.iitm.ac.in"
 RENDER_HOST = "live-mcp-server-aftb.onrender.com"
 
-# Keep each concurrent HTTP request's challenge separate.
 _current_challenge = contextvars.ContextVar(
     "current_exam_challenge",
     default="",
